@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+	
+	<head>
+		
+		<meta charset = "UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Curta+</title>
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+
+	</head>	
+
+	
+
+	<body>
+
+		<header>
+			<div class= "caixa">
+				<nav>
+					<ul>
+						<li><a href = "home.html">✈Home</a></li>
+						<li><a href="calculadora.html">✈Calculadora: viabilidade</a></li>
+						<li><a href = "contato.html">✈Contato</a></li>		
+	 
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+					<main>
+
+						<section class= "principal">
+							<h2 class="titulo-principal">Cálculo de Viabilidade da Viagem dos Sonho!</h2>
+
+							
+							<form class="form-calculdadora">
+								
+
+							    <label>Valor do Pacote ou Hospedagem:</label>
+							    <input id="v1" name="v1" value="" type="text"/>
+
+							    <br><br> 
+
+							    <label>Valor das Passagens:</label>
+							    <input id="v2" name="v2" value="" type="text"/>
+
+							    <br><br> 
+
+							    <label>Valor dos gastos com alimentação:</label>
+							    <input id="v3" name="v3" value="" type="text"/>
+
+							    <br><br> 
+
+							    <label>Valor dos gastos com compras (lembrancinhas e etc):</label>
+							    <input id="v4" name="v4" value="" type="text"/>
+
+							    <br><br> 
+
+							    <label>Valor total de gastos:</label>
+							    <button onclick="Gastos()">Calcular</button>
+
+							    <br><br>
+
+							    <label>Digite aqui o valor total de gastos:</label>
+							    <input id="v5" name="v5" value="" type="text"/>
+
+							    <br><br>
+
+							    <label>Orçamento disponível:</label>
+							    <input id="vo" name="vo" value="" type="text"/>
+							   
+							    <br><br> 
+
+							    <label>É viável?:</label>
+							    <button onclick="Viavel()">Calcular</button>
+								
+
+						    </form>
+						</section>    
+					</main>
+
+					<footer class="rodape-calculadora">
+					
+						<img src="rodapé.png">
+						<p class="copyright">&copy; Copyright Curta+ 2022</p>
+					</footer>
+	</body>
+
+</html>
+
+<script>
+	
+	function Gastos(){
+        var v1 = parseInt((document.getElementById("v1").value));
+        var v2 = parseInt((document.getElementById("v2").value));
+        var v3 = parseInt((document.getElementById("v3").value));
+        var v4 = parseInt((document.getElementById("v4").value));
+        var valortotaldegastos= (v1) + (v2) + (v3) + (v4);
+      alert("O valor total de gastos para a viagem dos sonhos é " + valortotaldegastos + " reais."); }
+
+      function Viavel(){
+        var vo = parseInt((document.getElementById("vo").value));
+        var v5 = parseInt((document.getElementById("v5").value));
+        
+      	
+        if (vo>=v5) {
+			
+			alert("Sim, você fará a sua viagem dos sonhos! 😍");
+
+        } else {
+
+        	alert("Não, planeje melhor! 😏");  }
+      	}
+
+
+
+</script>

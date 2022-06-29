@@ -1,0 +1,209 @@
+body{
+	font-family: 'Lora', sans-serif;
+}
+header{
+
+	background: url(banner-curta+1.png);
+	width: 100%;
+	padding:235px 20px;
+}
+
+.caixa{
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+nav { 
+
+position: absolute;
+top:-200px;
+margin: 0 0 80px;
+padding: 0 100px 0 0px;
+width: 60px;
+
+
+ }
+
+ nav li{
+
+display: block;
+padding: 25px;
+margin: 0 25px 25px;
+
+}
+
+
+
+nav a{
+
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover{
+
+	color: #483D8B;
+	text-decoration: underline;
+}
+
+/*Início css da home*/
+.titulo-principal{
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+
+}
+
+.principal{
+	padding: 3em 0; 
+	background: #FEFEFE;
+	width: 940px;
+ 	margin: 0 auto;
+ 	text-align: center;
+}
+
+.principal p{
+	text-align: center;
+}
+
+.pacotes{
+
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.pacotes li{
+
+display: inline-block;
+width: 30%;
+vertical-align: top;
+margin: 0 1.5%;
+padding: 30px 20px;
+box-sizing: border-box;
+border: 2px solid #000000;
+border-radius: 10px;
+opacity: 1;
+transition: 400ms;
+
+}
+
+.pacotes li:hover{
+
+	border-color: #483D8B;
+	opacity: 0.6;
+	cursor: pointer;
+
+}
+
+
+.hospedagens li{
+
+display: inline-block;
+text-align: center;
+width: 40%;
+vertical-align: top;
+margin: 0 2%;
+padding: 30px 20px;
+opacity: 1;
+transition: 400ms;
+box-sizing: border-box;
+border: 2px solid #000000;
+border-radius: 10px;
+
+}
+
+.hospedagens li:hover{
+
+	border-color: #483D8B;
+	opacity: 0.6;
+	cursor: pointer;
+
+}
+
+/*Fim css da home*/
+
+.rodape-home{
+	top: 1600px;
+	margin: 200px 0 0 100px;
+	margin-left:-15px;
+}
+
+.copyright{
+	text-align: center;
+}
+
+.form-calculdadora{
+
+ 	margin: 40px 0;
+ 	padding: 0 200px 0 200px;
+ }
+
+ .form-contato{
+
+ 	margin: 40px 0;
+ 	padding: 0 400px 0 400px;
+ }
+
+form label, form legend {
+
+ 	display: block;
+ 	font-size: 20px;
+ 	margin: 0 0 10px;
+
+ }
+.rodape-calculadora{
+
+	top: 1600px; 
+	left: -10px;	
+}
+
+.rodape-contato{
+
+	position: absolute;
+	top: 1700px; 
+	left: -10px;
+}
+
+.enviar{
+
+ 	width: 50%;
+ 	padding:15px 0;
+ 	background:#00BFFF;
+ 	font-weight:bold;
+ 	font-size:18px;
+ 	border:none;
+ 	border-radius:5px;
+ 	transition: 1s all;
+ 	cursor: pointer;
+ 	color: #FFFFFF;
+
+ }
+
+.enviar:hover{
+	background:#483D8B;
+	transform: scale(1.2);
+
+}
+
+.mapa-conteudo{
+	width: 940px;
+ 	margin: 0 auto;
+}
+
+@media screen and (max-width: 512px){
+	nav,  .caixa, .mapa-conteudo, .hospedagens li, .form-calculadora, .form-contato, form label, form legend, .principal p, .rodape-home, .rodape-calculadora, .rodape-contato {
+		width: auto;
+	}
+}
+
+@media screen and (max-width: 512px){ 
+		header, .principal {
+			width: 260%;
+			}
+		}
+
